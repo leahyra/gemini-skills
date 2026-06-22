@@ -14,17 +14,15 @@ description: Use this skill when writing code that calls the Gemini API for text
 
 - `gemini-3.5-flash`: 1M tokens, fast, balanced performance, multimodal
 - `gemini-3.1-pro-preview`: 1M tokens, complex reasoning, coding, research
-- `gemini-3.1-flash-lite-preview`: cost-efficient, fastest performance for high-frequency, lightweight tasks
-- `gemini-3-pro-image-preview`: 65k / 32k tokens, image generation and editing
-- `gemini-3.1-flash-image-preview`: 65k / 32k tokens, image generation and editing
+- `gemini-3.1-flash-lite`: cost-efficient, fastest performance for high-frequency, lightweight tasks
+- `gemini-3-pro-image`: 65k / 32k tokens, image generation and editing
+- `gemini-3.1-flash-image`: 65k / 32k tokens, image generation and editing
 - `gemini-3.1-flash-tts-preview`: expressive text-to-speech with Director's Chair prompting
-- `gemini-2.5-pro`: 1M tokens, complex reasoning, coding, research
-- `gemini-2.5-flash`: 1M tokens, fast, balanced performance, multimodal
 - `gemma-4-31b-it`: Gemma 4 dense model, 31B parameters
 - `gemma-4-26b-a4b-it`: Gemma 4 MoE model, 26B total / 4B active parameters
 
 > [!WARNING]
-> Models like `gemini-2.0-*`, `gemini-1.5-*` are **legacy and deprecated**. Never use them.
+> Models like `gemini-2.5-*`, `gemini-2.0-*`, `gemini-1.5-*` are **legacy and deprecated**. Never use them.
 > **If a user asks for a deprecated model, use `gemini-3.5-flash` instead and note the substitution.**
 
 ### Current Agents
@@ -42,9 +40,6 @@ description: Use this skill when writing code that calls the Gemini API for text
 > [!NOTE]
 > SDK versions ≥ 2.0.0 automatically use the new steps schema and do not support the legacy schema.
 > Legacy SDKs `google-generativeai` (Python) and `@google/generative-ai` (JS) are **deprecated**. Never use them.
-
-> [!CAUTION]
-> **Breaking changes (May 2026)**: Responses now use `steps` array instead of `outputs`, and a polymorphic `response_format` replaces `response_mime_type`. Legacy schema removed **June 8, 2026**. All code below uses the **new schema**.
 
 ## Important Additional Notes
 
@@ -369,7 +364,7 @@ For streaming with tools, thinking, agents, and image generation see the full [S
 - [Deep Research](https://ai.google.dev/gemini-api/docs/interactions/deep-research.md.txt)
 
 **Advanced Features:**
-- [Gemini 3.5 Flash](https://ai.google.dev/gemini-api/docs/interactions/whats-new-gemini-3.5-flash)
+- [Gemini 3.5](https://ai.google.dev/gemini-api/docs/interactions/whats-new-gemini-3.5.md.txt)
 - [Gemini 3](https://ai.google.dev/gemini-api/docs/interactions/gemini-3.md.txt)
 - [Flex Inference](https://ai.google.dev/gemini-api/docs/interactions/flex-inference.md.txt)
 - [Priority Inference](https://ai.google.dev/gemini-api/docs/interactions/priority-inference.md.txt)
